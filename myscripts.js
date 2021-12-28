@@ -5,46 +5,47 @@ let b = 0;
 
 let operator = ["+", "-", "*", "/"];
 
+// Array to store numbers
+const number = [];
+
+// display
+let display = document.getElementById("screen-text");
+
 // Basic functions
 function add(a,b) {
     let c = a + b;
-
     return c;
 }
 
 function subtract(a,b) {
     let c = a - b;
-
     return c;
 }
 
 function multiply(a,b) {
     let c = a * b;
-
     return c;
 }
 
 function divide(a,b) {
     let c = a / b;
-
     return c;
 }
 
 
+
 // Function operate
-function operate(a, operator, b) {
+function operate(number, operator) {
+    a = number[0];
+    b = number[1];
     if (operator === "+") {
-        result = add(a,b);
-        console.log(result);
+        display.innerHTML = add(a,b);
     } else if (operator === "-") {
-        result = subtract(a,b);
-        console.log(result);
+        display.innerHTML = subtract(a,b);
     } else if (operator === "*") {
-        result = multiply(a,b);
-        console.log(result);
+        display.innerHTML = multiply(a,b);
     } else if (operator === "/") {
-        result = divide(a,b);
-        console.log(result);
+        display.innerHTML = divide(a,b);
     }
 }
 

@@ -19,40 +19,42 @@
 
         <!-- Screen-->
         <div class="screen">
-            <div class="screen-text">123abc</div>
+            <div id="screen-text">0.</div>
         </div>
 
         <!-- numbers, first row-->
         <div class="numbers1">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button id="DEL">DEL</button>
-            <button id="AC">AC</button>
+            <button onclick="number.push(7)">7</button>
+            <button onclick="number.push(8)">8</button>
+            <button onclick="number.push(9)">9</button>
+            <button id="DEL"
+            onclick="window.location.reload();">DEL</button>
+            <button id="AC"
+            onclick="window.location.reload();">AC</button>
         </div>
         <!-- numbers, second row-->
         <div class="numbers2">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>X</button>
-            <button>÷</button>
+            <button onclick="number.push(4)">4</button>
+            <button onclick="number.push(5)">5</button>
+            <button onclick="number.push(6)">6</button>
+            <button onclick="operator = '*'">X</button>
+            <button onclick="operator = '/'">÷</button>
         </div>
         <!-- numbers, third row-->
         <div class="numbers3">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>-</button>
+            <button onclick="number.push(1)">1</button>
+            <button onclick="number.push(2)">2</button>
+            <button onclick="number.push(3)">3</button>
+            <button onclick="operator = '+'">+</button>
+            <button onclick="operator = '-'">-</button>
         </div>
         <!-- numbers, fourth row-->
         <div class="numbers4">
-            <button>0</button>
+            <button onclick="number.push(0)">0</button>
             <button>.</button>
             <button>EXP</button>
             <button>ANS</button>
-            <button>=</button>
+            <button onclick="operate(number,operator)">=</button>
         </div>
     </div>
 </body>
