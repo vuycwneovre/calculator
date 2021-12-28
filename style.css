@@ -9,10 +9,57 @@
     align-items: center;
     size: 40px;
     padding: 50px;
+    padding-bottom: 0px;
+}
+
+.subheader {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 10px;
+    padding-bottom: 100px;
+    font-style: oblique;
+}
+
+.screen {
+    display: flex;
+    background-color: yellowgreen;
+    height: 20px;
+    width: 190px;
+    padding-top: 20px;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.screen-text {
+    display: flex;
+    background-color: yellowgreen;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.numbers1, .numbers2, .numbers3, .numbers4 {
+    display: flex;
+    column-gap: 5px;
+}
+
+button {
+    display: grid;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 35px;
+    height: 20px;
+}
+
+#DEL, #AC {
+    background-color: red;
 }
